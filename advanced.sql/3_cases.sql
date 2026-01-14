@@ -1,5 +1,5 @@
 -- 1. Tables Query
-/*
+
 -- JANUARY
 CREATE TABLE jan_jobs AS
     SELECT 
@@ -122,10 +122,8 @@ CREATE TABLE dec_jobs AS
 
     SELECT job_posted_date
     FROM mar_jobs;
-*/
 
 --2. CASE Query
-/*
 SELECT
     job_title_short,
     job_location,
@@ -136,10 +134,8 @@ SELECT
     END AS location_category
 FROM
     job_postings_fact;
-*/
 
 -- 3. CASE Query
-/*
 SELECT
     COUNT(job_id) AS number_of_jobs,
     CASE
@@ -153,4 +149,3 @@ WHERE
     job_title_short = 'Data Analyst'
 GROUP BY 
     location_category;
-*/

@@ -1,4 +1,3 @@
-/*
 1. SubQuery
 SELECT 
     name AS company_name
@@ -12,9 +11,7 @@ WHERE company_id IN (
     WHERE
         job_no_degree_mention = true
 )
-*/
 
-/*
 2. CTE
 WITH company_job_count AS (
     SELECT
@@ -28,10 +25,8 @@ WITH company_job_count AS (
 
 SELECT *
 FROM company_job_count
-*/
 
 --3. More Query
-/* 
 WITH company_job_count AS (
     SELECT
         company_id,
@@ -50,5 +45,3 @@ FROM
 LEFT JOIN company_job_count ON company_job_count.company_id = company_dim.company_id
 ORDER BY 
     total_jobs DESC;
-*/
-
